@@ -1,27 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="signup.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-      rel="stylesheet"
-    />
-  </head>
+<body>
+  <div class="content">
+    <div class="">
+      <div class="DisplayOrder">
+        <div class="DisplayOrder-welcome">
+          <h1>Your Menus</h1>
+        </div>
 
-  <body>
-    <div class="layer">
-      <div class="signup-form">
-        <form class="" action="index.html" method="post">
-          <h1>Login</h1>
-          <input type="email" placeholder="Email" class="txtb" />
-          <input type="password" placeholder="Password" class="txtb" />
-          <input type="submit" value="Login" class="signup-btn" />
-          <a href="#">Already Have one ?</a>
-        </form>
+        <% Menu.where(user_id: @current_user.id).each do |menu|%>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+          <div class="offer-item">
+            <img src="/assets/menu-item-thumbnail-03.jpg" alt="">
+            <div>
+              <h3><b>Menu name: <%= menu.name %></b></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.
+              </p>
+            </div>
+            <div style="padding-left: 850px">
+              <%= form_with(url: "/menus/edit", method:"post") do %>
+              <%= hidden_field_tag 'id', menu.id %>
+              <%= submit_tag "View menu" , class: "signup-btn-in"%>
+              <% end %>
+              <%= form_with(url: "/menus/#{menu.id}", method:"delete") do %>
+              <%= submit_tag "Delete menu" , class: "signup-btn-in"%>
+              <% end %></div>
+          </div>
+        </div>
+
+        <%end%>
+
+
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</body>
