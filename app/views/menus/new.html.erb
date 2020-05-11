@@ -4,15 +4,18 @@
       <div class="Displaymenu">
         <h1>Your Orders</h1>
       </div>
-      <div class="contentin">
-      <%= form_with(url: "/menus", method:"post", class: "") do %>
 
-          <p class="adjustmenu2">Enter Menu Name</p>
-          <%= text_field_tag 'name' ,nil , class: "Form-input" %>
 
-        <%= submit_tag "Add Items" , class: "signup-btn-in3"%>
 
-      <%end%>
-    </div>
-    </div>
-  </div>
+  <section class="page-heading">
+
+
+             <%= form_with(url: "/menus", method:"post", class: "") do %>
+                    <h1>Enter Menu Name</h1>
+                      <%= text_field_tag 'name' ,nil , class: "Form-input" %>
+                      <%= submit_tag "Add Items" , class: "signup-btn-in3"%>
+
+            <%end%>
+
+    </section>
+</div>

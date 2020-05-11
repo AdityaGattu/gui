@@ -1,0 +1,26 @@
+
+section.page-heading {
+	padding: 80px 0px;
+	background-image: url(footer_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+.page-heading h1 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-family: 'Spectral', serif;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.page-heading p {
+	color: #fff;
+	font-size: 14px;
+	padding: 0px 25%;
+	margin-bottom: 0px;
+}
