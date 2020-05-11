@@ -24,3 +24,33 @@ section.page-heading {
 	padding: 0px 25%;
 	margin-bottom: 0px;
 }
+
+
+.page-heading h2 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding-right: 120px;
+	padding-left: 60px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	display: inline-flex;
+
+}
+
+.page-heading h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-left: 60px;
+	padding-right: 20px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	display: inline-flex;
+
+}
