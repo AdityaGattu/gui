@@ -1,16 +1,18 @@
-<body>
-  <div class="AddOrder">
+ <div class="content">
+
     <div class="DisplayOrder">
-      <div class="DisplayOrder-welcome">
+      <div class="Displaymenu">
         <h1>Your Orders</h1>
       </div>
-      <%= form_with(url: "/menus", method:"post", class: "AddItem-body") do %>
-        <div class="AddItem-container">
-          <p class="AddItem-name">Menu Name:</p>
-          <%= text_field_tag 'name' ,nil , class: "AddItem-item" %>
-        </div>
-        <%= submit_tag "Add Items" , class: "AddOrder-button"%>
+      <div class="contentin">
+      <%= form_with(url: "/menus", method:"post", class: "") do %>
+
+          <p class="adjustmenu2">Enter Menu Name</p>
+          <%= text_field_tag 'name' ,nil , class: "Form-input" %>
+
+        <%= submit_tag "Add Items" , class: "signup-btn-in3"%>
+
       <%end%>
     </div>
+    </div>
   </div>
-</body>
