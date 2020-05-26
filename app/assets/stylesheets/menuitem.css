@@ -18,6 +18,18 @@ section.page-heading {
 	color: #fff;
 }
 
+
+
+.page-heading h4 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+
+	color: #fff;
+}
+
 .page-heading p {
 	color: #fff;
 	font-size: 14px;
