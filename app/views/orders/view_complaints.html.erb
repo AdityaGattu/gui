@@ -1,8 +1,13 @@
 <body>
-  <div class="DisplayOrder">
-    <div class="DisplayOrder-welcome">
-      <h1>Complaint orders</h1>
-    </div>
+
+
+     <div class="content">
+
+      <div class="DisplayOrder">
+        <div class="Displaymenu">
+          <h1>Complaint Orders</h1>
+        </div>
+
     <% Order.where(status: "complaint").each do |order|  #getting only undelivered orders%>
       <div class="DisplayOrder-card">
         <div class="DisplayOrder-container">
@@ -16,5 +21,9 @@
         </div>
       </div>
     <% end %>
+
+
   </div>
+
+
 </body>
