@@ -36,6 +36,16 @@ section.page-heading4 {
 
 }
 
+
+section.page-heading4 {
+	padding: 80px 0px;
+	background-image: url(heading-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+}
+
 .page-heading4 h4 {
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -43,7 +53,16 @@ section.page-heading4 {
 	font-family: 'Spectral', serif;
 	font-size: 24px;
 	font-weight: 700;
+	color:white;
+}
 
+.page-heading4 h4 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 300px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
 	color:white;
 }
 
@@ -209,4 +228,15 @@ hr.roundedfull {
 .floatright
 {
  margin-left: 100px;
+}
+
+.textline3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 340px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+	color:white;
+
 }

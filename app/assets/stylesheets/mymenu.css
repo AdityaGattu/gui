@@ -202,6 +202,8 @@ font-size: larger;
 }
 
 
+
+
 a { color: white;text-decoration: none; }
 
 .content {
@@ -341,4 +343,11 @@ margin-left: 80%;
 
 .inline{
   display: inline-flex;
+}
+
+.leftside
+{
+color:white;
+font-size: 24px;
+margin-right:500 px;
 }
