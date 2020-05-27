@@ -1,20 +1,36 @@
 <body>
   <div class="content">
     <div class="DisplayOrder">
-      <div class="Displaymenu">
-        <h1>Invoice Details</h1>
+      <div class="Displaymenu2">
+        <h1>Your Orders</h1>
       </div>
-      <section class="page-heading1">
-        <h4>Order no : <%= session[:show_order_id] %> </h4>
-        <%customer_id=Order.find(session[:show_order_id]).user_id%>
-        <h4>Customer name : <%= User.find(customer_id).first_name + " " +User.find(customer_id).last_name%></h4>
-        <% Orderitem.where(order_id: session[:show_order_id]).each do |orderitem|%>
-        <h4><b>Item name : <%= orderitem.menu_item_name%></b></h4>
-        <h4><b>Quantity : <%= orderitem.menu_item_quantity%></b></h4>
-        <% end %>
-        <hr class="rounded">
-        <h4><b>Total: <%=Order.find(session[:show_order_id]).total%></b></h4>
-    </div>
-    </section>
-  </div>
+
+      <div class="inline">
+        <%= image_tag("deliveryboy.jpg",:size => "600x550", :alt => "rss feed") %>
+        <% Order.show_orders.where(user_id: @current_user.id).each do |order| %>
+        <div class="secondhalf2">
+          <div class="DisplayOrder-card">
+            <div class="DisplayOrder-container">
+              <div class="textline1">Order id: <b><%= order.id.to_s %></b></div>
+              <div class="textline1"><b>Order time: <%= order.order_date.to_s(:long) %></b></div>
+              <div class="textline1"><b>Delivery status:
+                  <%= (order.delivered_at==nil) ?  "Delivery in progress" : "Delivered at #{order.delivered_at.to_s(:long)}" %>
+              </div>
+              <% if order.delivered_at != nil %>
+              <%= form_with(url: "/orders/#{order.id}", method:"delete") do %>
+              <%= submit_tag "received?", class: "signup-btn-in3"%>
+              <% end %>
+              <%= form_with(url: "/orders/complain", method:"post") do %>
+              <%= hidden_field_tag 'id', order.id %>
+              <%= submit_tag "complain", class: "signup-btn-in3" %>
+              <% end %>
+              <% end %>
+            </div>
+
+          </div>
+          <% end %>
+
+
+        </div>
+      </div>
 </body>
