@@ -17,6 +17,27 @@ section.page-heading1 {
 	text-align: center;
 }
 
+
+section.page-heading3 {
+	padding: 180px 0px;
+	background-image: url(customer_bg.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+}
+
+.page-heading3 h4 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 300px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+
+	color: black;
+}
+
 .page-heading h1 {
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -101,7 +122,9 @@ section.page-heading1 {
 	 margin-top: 20px;
 	 text-align: center;
 	 font-weight: 550;
-	 font-size: larger;
+	 font-size: 22px;
+	 font-style: roboto;
+
 }
 
 
@@ -117,5 +140,17 @@ hr.rounded {
 hr.roundedfull {
   border-top: 5px solid rgb(53, 184, 13);
 	border-radius: 2px;
+
+}
+
+.modelimage{
+
+	height: 500px;
+  width:200px;
+}
+
+.secondhalf{
+
+	width: 838px;
 
 }
