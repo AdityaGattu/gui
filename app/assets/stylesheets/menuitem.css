@@ -37,6 +37,16 @@ section.page-heading1 {
 	color: #fff;
 }
 
+.page-heading1 h3 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	font-weight: 700;
+
+	color: #fff;
+}
+
 
 .page-heading h4 {
 	margin-top: 0px;
@@ -101,4 +111,11 @@ hr.rounded {
 	margin-left: 30%;
 	margin-right: 30%;
 	margin-bottom: 20px;
+}
+
+
+hr.roundedfull {
+  border-top: 5px solid rgb(53, 184, 13);
+	border-radius: 2px;
+
 }

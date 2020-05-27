@@ -16,6 +16,17 @@ font-size: larger;
   font-family: Roboto;
 }
 
+.Displaymenu2 {
+  padding: 30px;
+  text-align: center;
+  background: url(backimg.jpg);
+  color: white;
+  font-size: x-large;
+  font-weight: 700;
+  font-family: Roboto;
+}
+
+
 .signup-btn-in1{
   font-weight: bold;
   padding-top: 8px;
@@ -127,6 +138,35 @@ font-size: larger;
   transition: 0.8s;
 }
 
+.signup-btn-in8{
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 6px;
+  margin-left: 300px;
+  background: url(backimg.jpg) no-repeat center;
+  color: #fff;
+  border-radius: 44px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.signup-btn-in9{
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 6px;
+  margin-left: 333px;
+  background: url(backimg.jpg) no-repeat center;
+  color: #fff;
+  border-radius: 44px;
+  cursor: pointer;
+  transition: 0.8s;
+}
 
 a { color: white;text-decoration: none; }
 
@@ -263,4 +303,8 @@ margin-left: 80%;
 .offer-item div p {
     color: #6b6b6b;
     margin-top: 15px;
+}
+
+.inline{
+  display: inline-flex;
 }
